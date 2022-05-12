@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>ToDo</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <h1>Список дел</h1>
+        </div>
+        <div class="add__task">
+            <input type="text" class="inp" placeholder="I want to..." />
+            <button class="btn">Add</button>
+            <button class="btn">Clear</button>
+        </div>
+        <div class="filter__tasks">
+            <button class="btn">All</button>
+            <button class="btn">Done</button>
+            <button class="btn">Undone</button>
+            <div class="sort">
+                <select>
+                    <option selected disabled>Sort by date</option>
+                    <option value="new">New</option>
+                    <option value="old">Old</option>
+                </select>
+            </div>
+        </div>
+        <div class="tasks">
+            <ul class="tasks__list">
+                <li class="task">Дело 1 <span class="date">05/06/22</span>
+                    <button class="btn__delete">X</button><hr></li>
+                <li class="task">Дело 2 <span class="date">10/06/22</span>
+                    <button class="btn__delete">X</button><hr></li>
+                <li class="task">Дело 3 <span class="date">18/06/22</span>
+                    <button class="btn__delete">X</button><hr></li>
+                <li class="task">Дело 4 <span class="date">01/07/22</span>
+                    <button class="btn__delete">X</button><hr></li>
+                <li class="task">Дело 5 <span class="date">04/07/22</span>
+                    <button class="btn__delete">X</button><hr></li>
+            </ul>
+        </div>
+        <div class="pagination">
+            <a href="#">&laquo;</a>
+            <a class="active" href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a href="#">&raquo;</a>
+          </div>
+    </div>
+</body>
+</html>
