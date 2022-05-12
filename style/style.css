@@ -2,7 +2,7 @@
     width: 70%;
     padding-bottom: 5%;
     margin-left: 15%;
-    background-color: black;
+    background-color: rgb(68, 63, 63);
     position: fixed;
  }
 
@@ -13,25 +13,31 @@
     padding-top: 1%;
  }
 
+ .add__task{
+     display: flex;
+     justify-content: center;
+
+ }
+
 .inp {
     margin-left: 7%;
     width: 60%;
     border: 1px solid yellow;
-    height: 2rem;
+    height: 30px;
     font-size: 16px;
  }
 
 .btn {
     width: 90px;
-    height: 2.3rem;
+    height: 35px;
     margin-left: 2%;
     color: white;
-    background-color: black;
+    background-color: rgb(68, 63, 63);
     border: 1px solid yellow;
  }
 
 .filter__tasks {
-    margin-left: 8%;
+    margin-left: 13%;
     margin-top: 3%;
     display: flex;
  }
@@ -42,14 +48,14 @@
  }
 
 .sort select {
-    height: 2.3rem;
+    height: 35px;
  }
 
 .tasks {
     border: 1px solid yellow;
     width: 80%;
     margin-top: 3%;
-    margin-left: 5%;
+    margin-left: 10%;
     padding-bottom: 5%;
  } 
 
@@ -59,30 +65,28 @@
  }
 
 .task {
-    font-size: 2.5rem;
-    margin-left: 5%;
+    font-size: 20px;
     margin-top: 3%;
+    display: flex;
+    justify-content: space-around;
  }
 
+
 .btn__delete {
-    margin-left: 10%;
-    width: 70px;
-    height: 2rem;
+    width: 90px;
+    height: 35px;
     color: white;
-    background-color: black;
+    background-color: rgb(68, 63, 63);
     border: 1px solid yellow;
  }
 
 hr {
-    margin-right: 10%;
+    margin-right: 5%;
  }
 
 .date {
     margin-left: 30%;
- }
-
-.inp:hover {
-    border: 2px solid rgb(231, 231, 73);
+    margin-top: 5px;
  }
 
 .btn:hover, .btn__delete:hover {
@@ -90,34 +94,31 @@ hr {
  }
 
 .pagination{
-    margin-left: 3%;
+    margin-left: 5%;
     margin-top: 1%;
 }
 
-.pagination a {
+.pagination ul{
+    list-style-type: none;
+}
+
+.pagination li {
     color: white;
     float: left;
     padding: 8px 16px;
-    text-decoration: none;
     transition: background-color .7s;
   }
   
 
-.pagination a.active {
+.pagination li.active {
     background-color: dodgerblue;
    
   }
   
-.pagination a:hover:not(.active) {
+.pagination li:hover:not(.active) {
     background-color: #ddd;
-    color: black;
+    color: rgb(68, 63, 63);
     }
-
-@media screen and (min-width:300px) and (max-width:1270px){
-    .wrapper{
-        position: relative;
-    }
-}
 
 @media screen and (min-width:700px) and (max-width:1000px) {
     
@@ -125,16 +126,33 @@ hr {
         margin-left: 12%;
         width: 50%;
         border: 1px solid yellow;
-        height: 1.5rem;
+        height: 30px;
     }
     .btn {
         width: 70px;
-        height: 2.3rem;
+        height: 30px;
         margin-left: 1.5%;
         color: white;
-        background-color: black;
+        background-color: rgb(68, 63, 63);
         border: 1px solid yellow;
     }
+
+    .task {
+        font-size: 20px;
+        margin-top: 3%;
+        margin-right: 10%;
+        display: flex;
+        justify-content: space-around;
+     }
+
+     .date {
+        margin-top: 3px;
+     }
+
+     hr {
+        margin-right: 10%;
+     }
+
  }
 
 @media screen and (min-width:500px) and (max-width:700px) {
@@ -143,14 +161,14 @@ hr {
         margin-left: 7%;
         width: 45%;
         border: 1px solid yellow;
-        height: 1.5rem;
+        height: 30px;
     }
     .btn {
         width: 65px;
-        height: 2.3rem;
+        height: 30px;
         margin-left: 2%;
         color: white;
-        background-color: black;
+        background-color: rgb(68, 63, 63);
         border: 1px solid yellow;
     }
     .filter__tasks {
@@ -158,24 +176,48 @@ hr {
         margin-top: 3%;
         display: flex;
     }
+
+    .tasks {
+        border: 1px solid yellow;
+        width: 80%;
+        margin-top: 3%;
+        margin-left: 10%;
+        padding-bottom: 5%;
+     } 
+
+     .task{
+        font-size: 14px;
+     }
+
+    .tasks__list{
+        margin-right: 5%;
+    }
+
+    .date {
+        margin-top: 2px;
+     }
+
+     .todo{
+        margin-top: 2px;
+    }
+
+     hr {
+        margin-right: 15%;
+     }
+
+    .pagination li {
+        color: white;
+        float: left;
+        padding: 4px 8px;
+        text-decoration: none;
+        transition: background-color .7s;
+      }
 }
 
 @media screen and (min-width:200px) and (max-width:500px) {
 
-    .inp {
-        margin-left: 7%;
-        width: 80%;
-        border: 1px solid yellow;
-        height: 2.5rem;
-    }
-    .btn {
-        width: 50%;
-        height: 2.3rem;
-        margin-left: 26%;
-        margin-top: 5%;
-        color: white;
-        background-color: black;
-        border: 1px solid yellow;
+    .btn{
+        font-size: 14px;
     }
 
     .filter__tasks {
@@ -185,28 +227,60 @@ hr {
     }
 
     .filter__tasks .btn {
-        width: 18%;
-        margin-left: 5%;
-        font-size: 0.6rem;
+        width: 19%;
+        margin-left: 6%;
+        font-size: 11px;
     }
 
     .sort {
         color: white;
-        margin-left: 2%;
-        margin-top: 5%;
+        margin-left: 4%;
     }
     .sort select {
         width: 50px;
     }
+
+    .tasks {
+        border: 1px solid yellow;
+        width: 90%;
+        margin-top: 3%;
+        margin-left: 3%;
+        padding-bottom: 5%;
+     }
+
+    .task {
+        width: 100%;
+        font-size: 14px;
+        margin-top: 3%;
+        margin-left: -10%;
+        display: flex;
+        justify-content: space-around;
+     }
+
+     .todo{
+         margin-top: 4px;
+     }
+
+    .pagination li {
+        color: white;
+        float: left;
+        padding: 2px 4px;
+        text-decoration: none;
+        transition: background-color .7s;
+      }
+
+    hr {
+        margin-left: -12%;
+     }
 }
 
 @media screen and (min-width:200px) and (max-width:810px) {
     .btn__delete {
         margin-left: 3%;
         width: 70px;
-        height: 2rem;
+        height: 25px;
         color: white;
-        background-color: black;
+        background-color: rgb(68, 63, 63);
         border: 1px solid yellow;
     }
 
