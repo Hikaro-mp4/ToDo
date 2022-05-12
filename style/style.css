@@ -113,6 +113,12 @@ hr {
     color: black;
     }
 
+@media screen and (max-width:1270px){
+    .wrapper{
+        position: relative;
+    }
+}
+
 @media screen and (min-width:700px) and (max-width:1000px) {
     
     .inp {
