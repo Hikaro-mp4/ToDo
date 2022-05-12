@@ -113,7 +113,7 @@ hr {
     color: black;
     }
 
-@media screen and (max-width:1270px){
+@media screen and (min-width:300px) and (max-width:1270px){
     .wrapper{
         position: relative;
     }
