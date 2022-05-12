@@ -1,0 +1,210 @@
+.wrapper {
+    width: 70%;
+    padding-bottom: 5%;
+    margin-left: 15%;
+    background-color: black;
+    position: fixed;
+ }
+
+.header {
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    padding-top: 1%;
+ }
+
+.inp {
+    margin-left: 7%;
+    width: 60%;
+    border: 1px solid yellow;
+    height: 2rem;
+    font-size: 16px;
+ }
+
+.btn {
+    width: 90px;
+    height: 2.3rem;
+    margin-left: 2%;
+    color: white;
+    background-color: black;
+    border: 1px solid yellow;
+ }
+
+.filter__tasks {
+    margin-left: 8%;
+    margin-top: 3%;
+    display: flex;
+ }
+
+.sort {
+    color: white;
+    margin-left: 1%;
+ }
+
+.sort select {
+    height: 2.3rem;
+ }
+
+.tasks {
+    border: 1px solid yellow;
+    width: 80%;
+    margin-top: 3%;
+    margin-left: 5%;
+    padding-bottom: 5%;
+ } 
+
+.tasks__list {
+    color: white;
+    list-style-type: none;
+ }
+
+.task {
+    font-size: 2.5rem;
+    margin-left: 5%;
+    margin-top: 3%;
+ }
+
+.btn__delete {
+    margin-left: 10%;
+    width: 70px;
+    height: 2rem;
+    color: white;
+    background-color: black;
+    border: 1px solid yellow;
+ }
+
+hr {
+    margin-right: 10%;
+ }
+
+.date {
+    margin-left: 30%;
+ }
+
+.inp:hover {
+    border: 2px solid rgb(231, 231, 73);
+ }
+
+.btn:hover, .btn__delete:hover {
+    border: 2px solid yellow;
+ }
+
+.pagination{
+    margin-left: 3%;
+    margin-top: 1%;
+}
+
+.pagination a {
+    color: white;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .7s;
+  }
+  
+
+.pagination a.active {
+    background-color: dodgerblue;
+   
+  }
+  
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+    color: black;
+    }
+
+@media screen and (min-width:700px) and (max-width:1000px) {
+    
+    .inp {
+        margin-left: 12%;
+        width: 50%;
+        border: 1px solid yellow;
+        height: 1.5rem;
+    }
+    .btn {
+        width: 70px;
+        height: 2.3rem;
+        margin-left: 1.5%;
+        color: white;
+        background-color: black;
+        border: 1px solid yellow;
+    }
+ }
+
+@media screen and (min-width:500px) and (max-width:700px) {
+
+    .inp {
+        margin-left: 7%;
+        width: 45%;
+        border: 1px solid yellow;
+        height: 1.5rem;
+    }
+    .btn {
+        width: 65px;
+        height: 2.3rem;
+        margin-left: 2%;
+        color: white;
+        background-color: black;
+        border: 1px solid yellow;
+    }
+    .filter__tasks {
+        margin-left: 5%;
+        margin-top: 3%;
+        display: flex;
+    }
+}
+
+@media screen and (min-width:200px) and (max-width:500px) {
+
+    .inp {
+        margin-left: 7%;
+        width: 80%;
+        border: 1px solid yellow;
+        height: 2.5rem;
+    }
+    .btn {
+        width: 50%;
+        height: 2.3rem;
+        margin-left: 26%;
+        margin-top: 5%;
+        color: white;
+        background-color: black;
+        border: 1px solid yellow;
+    }
+
+    .filter__tasks {
+        margin-left: 0px;
+        margin-top: 3%;
+        display: flex;
+    }
+
+    .filter__tasks .btn {
+        width: 18%;
+        margin-left: 5%;
+        font-size: 0.6rem;
+    }
+
+    .sort {
+        color: white;
+        margin-left: 2%;
+        margin-top: 5%;
+    }
+    .sort select {
+        width: 50px;
+    }
+}
+
+@media screen and (min-width:200px) and (max-width:810px) {
+    .btn__delete {
+        margin-left: 3%;
+        width: 70px;
+        height: 2rem;
+        color: white;
+        background-color: black;
+        border: 1px solid yellow;
+    }
+
+    .date {
+        margin-left: 0%;
+    }
+}
