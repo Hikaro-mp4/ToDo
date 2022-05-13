@@ -1,7 +1,7 @@
 import React from "react";
-import '../MySelect/MySelect.css'
+import '../styles/Select.css'
 
-const MySelect = ({defVal}) => {
+const Select = ({defVal}) => {
 
     return(
         <select className="sort" defaultValue={defVal}>
@@ -12,4 +12,4 @@ const MySelect = ({defVal}) => {
     )
 }
 
-export default MySelect;
+export default Select;

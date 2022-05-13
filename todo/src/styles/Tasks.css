@@ -5,13 +5,3 @@
     margin-left: 10%;
     padding-bottom: 5%;
  } 
-
- @media screen and (min-width:200px) and (max-width:580px){
-    .tasks {
-        border: 1px solid yellow;
-        width: 80%;
-        margin-top: 3%;
-        /* margin-left: 5%; */
-        padding-bottom: 5%;
-     } 
-}

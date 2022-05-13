@@ -1,16 +1,16 @@
 import React from "react";
-import MyButton from "./UI/MyButton/MyButton";
-import MyInput from "./UI/MyInput/MyInput";
+import Button from "../components/Button"
+import Input from "./Input";
 import '../styles/PostItem.css'
 
 const PostItem = ({task,date}) => {
 
     return(
         <li className="task">
-            <MyInput type={'checkbox'}/>
+            <Input type={'checkbox'}/>
             <span className="todo">{task}</span>
             <span className="date">{date}</span>
-            <MyButton body={"Delete"}/>
+            <Button body={"Delete"}/>
         </li>
     )
 }
