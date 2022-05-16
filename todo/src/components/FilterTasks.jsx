@@ -8,7 +8,8 @@ const FilterTasks = ({posts,setFilter}) => {
     return(
         <div className="filter__tasks">
             <Button body={"All"} />
-            <Button body={"Done"} callback={setFilter} check={'checked'}/>
+            <Button body={"All"} callback={setFilter} check={'checked'}/>
+            <Button body={"Done"} callback={()=>setFilter('checked')} check={'checked'}/>    //Просто также сделать и другие фильтры
             <Button body={"Undone"} />
             <Select defVal={'Sort by date'}/>
         </div>
