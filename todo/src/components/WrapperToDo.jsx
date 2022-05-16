@@ -28,8 +28,8 @@ const WrapperToDo = () => {
         <div>
             <Header/>
             <AddTask posts={posts} setPosts={setPosts}/>
-            <FilterTasks posts={filterList} setFilter={setFilter}/>
-            <Tasks posts={posts} setPosts={setPosts}/>
+            <FilterTasks setFilter={setFilter}/>
+            <Tasks posts={filterList} setPosts={setPosts}/> //передаем отсорированный список
         </div>
     )
 }
