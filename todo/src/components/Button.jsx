@@ -1,10 +1,10 @@
 import React from "react";
 import '../styles/Button.css'
 
-const Button = ({body}) =>{
+const Button = ({body,callback,check}) =>{
 
     return(
-        <button className="btn">{body}</button>
+        <button onClick={callback} className="btn">{body}</button>
     )
 }
 

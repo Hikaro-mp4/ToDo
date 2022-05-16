@@ -1,21 +1,14 @@
 import React from "react";
-import PostItem from "./PostItem";
+import ListItem from "./ListItem";
 import '../styles/PostList.css'
 
-const PostList = () => {
+const PostList = ({posts, setPosts}) => {
 
     return(
         <ul className="post__list">
-            <PostItem task={"Дело 1"} date={"13/06/22"}/>
-            <hr/>
-            <PostItem task={"Дело 2"} date={"13/06/22"}/>
-            <hr/>
-            <PostItem task={"Дело 3"} date={"13/06/22"}/>
-            <hr/>
-            <PostItem task={"Дело 4"} date={"13/06/22"}/>
-            <hr/>
-            <PostItem task={"Дело 5"} date={"13/06/22"}/>
-            <hr/>
+            {posts.map(post=>
+                <ListItem key={post.id}  post={post} setPosts={setPosts}/>
+                )}
         </ul>
     )
 }
